@@ -16,7 +16,7 @@ app = Flask(__name__)
 
 
 english_bot = ChatBot('Bot',
-             storage_adapter='chatterbot.storage.SQLStorageAdapter',
+             storage_adapter='chatterbot.storage.MongoDatabaseAdapter',
              logic_adapters=[
    {
        'import_path': 'chatterbot.logic.BestMatch'
